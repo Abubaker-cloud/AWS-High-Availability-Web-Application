@@ -51,6 +51,13 @@ EC2 → CloudWatch → Alarm → SNS → Email
 - Security Groups control traffic between the Load Balancer, application servers, and database layer.
 - Network access is restricted to the required application communication paths.
 
+## 🚀 High Availability & Scalability
+
+- The application runs across multiple Availability Zones to improve fault tolerance.
+- An Application Load Balancer distributes incoming traffic across healthy EC2 instances.
+- EC2 Auto Scaling maintains the required number of application instances and supports horizontal scaling.
+- Health checks help ensure that traffic is routed only to healthy application instances.
+- Amazon RDS provides a managed database layer for the application.
 ## 🛠️ Challenges & Troubleshooting
 
 During the implementation, I faced challenges related to:
