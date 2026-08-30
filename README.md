@@ -30,6 +30,20 @@ EC2 → CloudWatch → Alarm → SNS → Email
 | **Amazon CloudWatch** | Monitors EC2 metrics such as CPU utilization. |
 | **Amazon SNS** | Sends email notifications when CloudWatch alarms are triggered. |
 
+## 🔄 Architecture Flow
+
+### Web Application Traffic
+
+User → Application Load Balancer → Target Group → EC2 Auto Scaling Group → RDS MySQL
+
+### Static Content Delivery
+
+S3 → CloudFront → Users
+
+### Monitoring & Notifications
+
+EC2 → CloudWatch → Alarm → SNS → Email
+
 ## 🔐 Security
 
 Security Groups were configured to control communication between the application and database layers.
