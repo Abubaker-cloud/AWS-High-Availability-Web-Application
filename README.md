@@ -68,6 +68,26 @@ During the implementation, I faced challenges related to:
 
 Troubleshooting these issues helped me develop a better understanding of AWS networking, traffic flow, service integration, and problem-solving.
 
+## 📸 Implementation Evidence
+
+### Application Load Balancer
+![Application Load Balancer](screenshots/alb.png)
+
+### EC2 Auto Scaling
+![Auto Scaling Group](screenshots/auto-scaling.png)
+
+### Amazon RDS MySQL
+![RDS MySQL](screenshots/rds.png)
+
+### Amazon CloudWatch
+![CloudWatch Alarm](screenshots/cloudwatch.png)
+
+### Amazon S3
+![S3 Bucket](screenshots/s3.png)
+
+### Amazon CloudFront
+![CloudFront Distribution](screenshots/cloudfront.png)
+
 ## 🎯 Key Learnings
 
 - AWS Networking
