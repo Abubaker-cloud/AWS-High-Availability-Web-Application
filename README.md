@@ -7,6 +7,7 @@ A hands-on AWS Cloud Architecture project focused on building a scalable and hig
 The main goal was to understand how multiple AWS services integrate together to create a reliable cloud architecture.
 
 ## 🏗️ Architecture
+![AWS Architecture Diagram](architecture-diagram.png)
 
 User → Application Load Balancer → Target Group → EC2 Auto Scaling Group → RDS
 
