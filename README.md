@@ -44,11 +44,12 @@ S3 → CloudFront → Users
 
 EC2 → CloudWatch → Alarm → SNS → Email
 
-## 🔐 Security
+## 🔒 Security
 
-Security Groups were configured to control communication between the application and database layers.
-
-The architecture separates access between the different components and restricts unnecessary network communication.
+- EC2 instances are deployed in private subnets and are accessed through the Application Load Balancer.
+- RDS MySQL is not publicly accessible and is deployed within private subnets.
+- Security Groups control traffic between the Load Balancer, application servers, and database layer.
+- Network access is restricted to the required application communication paths.
 
 ## 🛠️ Challenges & Troubleshooting
 
