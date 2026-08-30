@@ -15,19 +15,20 @@ S3 → CloudFront
 
 EC2 → CloudWatch → Alarm → SNS → Email
 
-## ☁️ AWS Services Used
+## 🛠️ AWS Services Used
 
-- Amazon VPC
-- Amazon EC2
-- Application Load Balancer (ALB)
-- Target Groups
-- Auto Scaling Groups (ASG)
-- Amazon RDS (MySQL)
-- Amazon S3
-- Amazon CloudFront
-- Amazon CloudWatch
-- Amazon SNS
-- Security Groups
+| AWS Service | Purpose |
+|------------|---------|
+| **Amazon VPC** | Created an isolated network environment with public and private subnets across multiple Availability Zones. |
+| **Application Load Balancer (ALB)** | Distributes incoming HTTP traffic across multiple EC2 instances. |
+| **EC2** | Hosts the web application servers inside private subnets. |
+| **EC2 Auto Scaling** | Maintains multiple healthy EC2 instances and provides scalability and fault tolerance. |
+| **Target Group** | Registers EC2 instances and performs health checks for the load balancer. |
+| **Amazon RDS (MySQL)** | Provides a managed relational database for the application. |
+| **Amazon S3** | Stores static website content and objects. |
+| **Amazon CloudFront** | Delivers S3 content globally through AWS edge locations with lower latency. |
+| **Amazon CloudWatch** | Monitors EC2 metrics such as CPU utilization. |
+| **Amazon SNS** | Sends email notifications when CloudWatch alarms are triggered. |
 
 ## 🔐 Security
 
